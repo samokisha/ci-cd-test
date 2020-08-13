@@ -27,4 +27,4 @@ jobs:
           java-version: 14
 
       - name: Build with Maven
-        run: mvn MAVEN_OPTS -B package
+        run: mvn $MAVEN_OPTS -B package
