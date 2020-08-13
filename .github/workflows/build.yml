@@ -32,4 +32,5 @@ jobs:
       - name: Upload app artifact
         uses: actions/upload-artifact@v2
         with:
+          name: ci-cd-test.jar
           path: target/ci-cd-test-*.jar
