@@ -8,7 +8,7 @@ jobs:
 
     env:
       MAVEN_HOME: ~/.m2/repository
-      MAVEN_OPTS: -Dmaven.repo.local=${{ jobs.build.env.MAVEN_HOME }}
+      MAVEN_OPTS: -Dmaven.repo.local=~/.m2/repository
 
     steps:
       - uses: actions/checkout@v2
