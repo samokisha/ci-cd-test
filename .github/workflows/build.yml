@@ -38,11 +38,11 @@ jobs:
       - name: Upload app artifact
         uses: actions/upload-artifact@v2
         with:
-          name: ci-cd-test.jar
+          name: ci-cd-test-app
           path: target/ci-cd-test-*.jar
 
       - name: Upload jacoco report
         uses: actions/upload-artifact@v2
         with:
-          name: jacoco.zip
-          path: target/site/jacoco/*
+          name: jacoco
+          path: target/site/jacoco/
