@@ -14,4 +14,6 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           format: markdown
-          message: New PR on ```${{ github.repository }}```
+          message: |
+            New PR on repository:
+            ```${{ github.repository }}```
