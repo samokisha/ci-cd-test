@@ -8,9 +8,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: send alert in telegram
+      - name: Send alert in telegram
         uses: appleboy/telegram-action@master
         with:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
-          message: New PR on `GITHUB_REPOSITORY`
+          format: markdown
+          message: |
+            New PR on repository:
+            ```${{ github.repository }}```
