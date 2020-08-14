@@ -15,7 +15,7 @@ public class CiCdTestApplication {
         SpringApplication.run(CiCdTestApplication.class, args);
     }
 
-    @RequestMapping("/**")
+    @RequestMapping(path = "/**")
     public Map<String, String> request(HttpServletRequest request) {
         return Map.of("url", request.getRequestURL().toString());
     }
