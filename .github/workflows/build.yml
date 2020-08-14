@@ -40,3 +40,9 @@ jobs:
         with:
           name: ci-cd-test.jar
           path: target/ci-cd-test-*.jar
+
+      - name: Upload jacoco report
+        uses: actions/upload-artifact@v2
+        with:
+          name: jacoco.zip
+          path: target/site/jacoco/*
