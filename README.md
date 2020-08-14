@@ -6,3 +6,6 @@
 
 ## Codecov
 [![codecov](https://codecov.io/gh/samokisha/ci-cd-test/branch/master/graph/badge.svg?token=43VBO2HZGK)](https://codecov.io/gh/samokisha/ci-cd-test)
+
+## SonarCloud
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=samokisha_ci-cd-test&metric=alert_status)](https://sonarcloud.io/dashboard?id=samokisha_ci-cd-test)
