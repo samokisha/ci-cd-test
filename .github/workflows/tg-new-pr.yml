@@ -13,4 +13,4 @@ jobs:
         with:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
-          message: New PR on `GITHUB_REPOSITORY`
+          message: New PR on `$GITHUB_REPOSITORY`
